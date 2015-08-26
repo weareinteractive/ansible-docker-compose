@@ -3,4 +3,4 @@
 # http://www.ansibleworks.com/docs/playbooks_variables.html#id26
 
 # version
-docker_compose_version: 1.1.0
+docker_compose_version:
