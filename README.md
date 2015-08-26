@@ -1,7 +1,9 @@
 # Ansible Docker Compose Role
 
-[![Build Status](https://travis-ci.org/weareinteractive/ansible-docker-compose.png?branch=master)](https://travis-ci.org/weareinteractive/ansible-docker-compose)
-[![Stories in Ready](https://badge.waffle.io/weareinteractive/ansible-docker-compose.svg?label=ready&title=Ready)](http://waffle.io/weareinteractive/ansible-docker-compose)
+[![Build Status](https://img.shields.io/travis/weareinteractive/ansible-docker.svg)](https://travis-ci.org/weareinteractive/ansible-docker)
+[![Galaxy](http://img.shields.io/badge/galaxy-franklinkim.docker-blue.svg)](https://galaxy.ansible.com/list#/roles/3276)
+[![GitHub Tags](https://img.shields.io/github/tag/weareinteractive/ansible-docker.svg)](https://github.com/weareinteractive/ansible-docker)
+[![GitHub Stars](https://img.shields.io/github/stars/weareinteractive/ansible-docker.svg)](https://github.com/weareinteractive/ansible-docker)
 
 > `docker-compose` is an [ansible](http://www.ansible.com) role which:
 >
@@ -24,7 +26,7 @@ Using `requirements.yml`:
 Using `git`:
 
 ```
-$ git clone https://github.com/weareinteractive/ansible-docker-compose.git
+$ git clone https://github.com/weareinteractive/ansible-docker-compose.git franklinkim.docker-compose
 ```
 
 ## Variables
@@ -33,7 +35,7 @@ Here is a list of all the default variables for this role, which are also availa
 
 ```
 # version
-docker_compose_version: 1.1.0
+docker_compose_version:
 ```
 
 ## Example playbook
@@ -46,7 +48,7 @@ docker_compose_version: 1.1.0
     - franklinkim.docker
     - franklinkim.docker-compose
   vars:
-    docker_compose_version: 1.1.0
+    docker_compose_version: 1.4.0
 ```
 
 ## Testing
