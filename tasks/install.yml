@@ -1,21 +1,28 @@
 ---
 
-- name: Installing APT packages
+- name: 'docker-compose > Ubuntu > installing APT packages'
   apt:
     name: python-setuptools
     state: present
+  when: ansible_distribution == 'Debian' or ansible_distribution == 'Ubuntu'
 
-- name: Installing dependencies
+- name: 'docker-compose > Suse > installing zypper packages'
+  zypper:
+    name: python-setuptools
+    state: present
+  when: ansible_distribution == 'Suse' or ansible_distribution == 'openSUSE'
+
+- name: 'docker-compose > installing dependencies'
   easy_install:
     name: pip
 
-- name: Installing Ansible PIP dependencies
+- name: 'docker-compose > installing Ansible PIP dependencies'
   pip:
     name: docker-compose
     version: "{{ docker_compose_version if docker_compose_version else omit }}"
     state: present
 
-- name: Setting permissions
+- name: 'docker-compose > setting permissions'
   file:
     path: /usr/local/bin/docker-compose
     group: root
