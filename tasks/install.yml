@@ -1,23 +1,16 @@
 ---
 
-- name: Installing APT packages
-  apt:
-    name: python-setuptools
-    state: present
+- name: Installing packages
+  action: "{{ ansible_pkg_mgr }} pkg={{ item }} state=present"
+  with_items:
+    - python-setuptools
 
 - name: Installing dependencies
   easy_install:
     name: pip
 
-- name: Installing Ansible PIP dependencies
+- name: Installing docker compose
   pip:
     name: docker-compose
-    version: "{{ docker_compose_version if docker_compose_version else omit }}"
+    version: "{{ docker_compose_version | default(omit) }}"
     state: present
-
-- name: Setting permissions
-  file:
-    path: /usr/local/bin/docker-compose
-    group: root
-    owner: root
-    mode: "0755"
