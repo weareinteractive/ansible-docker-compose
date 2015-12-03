@@ -9,8 +9,8 @@ Vagrant.configure("2") do |config|
     instance.vm.box = 'ubuntu/trusty64'
   end
 
-  config.vm.define 'precise' do |instance|
-    instance.vm.box = 'ubuntu/precise64'
+  config.vm.define 'harlequin' do |instance|
+    instance.vm.box = 'webhippie/opensuse-13.2'
   end
 
   # View the documentation for the provider you're using for more
