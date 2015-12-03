@@ -11,5 +11,5 @@ install:
 script:
   - echo localhost > inventory
   - ln -s ansible-docker-compose ../franklinkim.docker-compose
-  - ansible-playbook --syntax-check -i inventory test.yml
+  - ansible-playbook --syntax-check -i inventory tests/main.yml
   - ansible-playbook -i inventory tests/main.yml --connection=local --sudo -vvvv
