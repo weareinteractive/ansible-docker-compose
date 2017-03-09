@@ -1,34 +1,32 @@
-# Ansible franklinkim.docker role
+# Ansible franklinkim.docker-compose role
 
-[![Build Status](https://img.shields.io/travis/weareinteractive/ansible-docker.svg)](https://travis-ci.org/weareinteractive/ansible-docker)
+[![Build Status](https://img.shields.io/travis/weareinteractive/ansible-docker-compose.svg)](https://travis-ci.org/weareinteractive/ansible-docker-compose)
 [![Galaxy](http://img.shields.io/badge/galaxy-franklinkim.docker-blue.svg)](https://galaxy.ansible.com/list#/roles/3275)
-[![GitHub Tags](https://img.shields.io/github/tag/weareinteractive/ansible-docker.svg)](https://github.com/weareinteractive/ansible-docker)
-[![GitHub Stars](https://img.shields.io/github/stars/weareinteractive/ansible-docker.svg)](https://github.com/weareinteractive/ansible-docker)
+[![GitHub Tags](https://img.shields.io/github/tag/weareinteractive/ansible-docker-compose.svg)](https://github.com/weareinteractive/ansible-docker-compose)
+[![GitHub Stars](https://img.shields.io/github/stars/weareinteractive/ansible-docker-compose.svg)](https://github.com/weareinteractive/ansible-docker-compose)
 
-> `franklinkim.docker` is an [Ansible](http://www.ansible.com) role which:
+> `franklinkim.docker-compose` is an [Ansible](http://www.ansible.com) role which:
 >
-> * installs docker
-> * configures docker
-> * adds logrotate for docker container logs
+> * installs docker-compose
 
 ## Installation
 
 Using `ansible-galaxy`:
 
 ```shell
-$ ansible-galaxy install franklinkim.docker
+$ ansible-galaxy install franklinkim.docker-compose
 ```
 
 Using `requirements.yml`:
 
 ```yaml
-- src: franklinkim.docker
+- src: franklinkim.docker-compose
 ```
 
 Using `git`:
 
 ```shell
-$ git clone https://github.com/weareinteractive/ansible-docker.git franklinkim.docker
+$ git clone https://github.com/weareinteractive/ansible-docker-compose.git franklinkim.docker-compose
 ```
 
 ## Dependencies
@@ -66,16 +64,17 @@ This is an example playbook:
 
 ```
 
+
 ## Testing
 
 ```shell
-$ git clone https://github.com/weareinteractive/ansible-docker.git
-$ cd ansible-docker
-$ vagrant up
+$ git clone https://github.com/weareinteractive/ansible-docker-compose.git
+$ cd ansible-docker-compose
+$ make test
 ```
 
 ## Contributing
-In lieu of a formal styleguide, take care to maintain the existing coding style. Add unit tests and examples for any new or changed functionality.
+In lieu of a formal style guide, take care to maintain the existing coding style. Add unit tests and examples for any new or changed functionality.
 
 1. Fork it
 2. Create your feature branch (`git checkout -b my-new-feature`)
