@@ -1,3 +1,13 @@
+<a name="1.2.3"></a>
+### 1.2.3 (2018-04-24)
+
+
+#### Features
+
+*   add docker_compose_pip_version variable to set specific pip version ([df2dc391](https://github.com/weareinteractive/ansible-docker-compose/commit/df2dc391b3bd4576998af282895af8f6b84d9df3))
+
+
+
 <a name="1.2.2"></a>
 ### 1.2.2 (2017-03-09)
 
