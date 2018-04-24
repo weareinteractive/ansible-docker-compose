@@ -43,6 +43,8 @@ Here is a list of all the default variables for this role, which are also availa
 
 # version
 docker_compose_version:
+# optionally set to specific version (pip==9.0.3)
+docker_compose_pip_version: pip
 
 ```
 
@@ -55,12 +57,12 @@ This is an example playbook:
 ---
 
 - hosts: all
-  sudo: yes
   roles:
     - franklinkim.docker
     - franklinkim.docker-compose
   vars:
-    docker_compose_version: 1.5.1
+    docker_compose_version: 1.21.0
+    docker_compose_pip_version: pip==9.0.3
 
 ```
 
