@@ -2,3 +2,5 @@
 
 # version
 docker_compose_version:
+# optionally set to specific version (pip==9.0.3)
+docker_compose_pip_version: pip
