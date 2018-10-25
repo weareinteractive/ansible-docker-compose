@@ -2,8 +2,8 @@
 
 - hosts: all
   roles:
-    - franklinkim.docker
-    - franklinkim.docker-compose
+    - weareinteractive.docker
+    - weareinteractive.docker-compose
   vars:
     docker_compose_version: 1.21.0
     docker_compose_pip_version: pip #pip==9.0.3

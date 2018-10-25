@@ -3,8 +3,15 @@ galaxy_info:
   author: franklin <franklin@weareinteractive.com>
   company: We Are Interactive
   description: Installs docker-compose
-  min_ansible_version: 2.5
+  min_ansible_version: 2.4
   license: MIT
+  # Optionally specify the branch Galaxy will use when accessing the GitHub
+  # repo for this role. During role install, if no tags are available,
+  # Galaxy will use this branch. During import Galaxy will access files on
+  # this branch. If travis integration is cofigured, only notification for this
+  # branch will be accepted. Otherwise, in all cases, the repo's default branch
+  # (usually master) will be used.
+  github_branch: master
   #
   # Below are all platforms currently available. Just uncomment
   # the ones that apply to your role. If you don't see your

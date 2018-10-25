@@ -6,9 +6,9 @@ before_install:
  - sudo apt-get install -qq python-apt python-pycurl aptitude
 install:
   - pip install ansible
-  - ansible-galaxy install franklinkim.docker
+  - ansible-galaxy install weareinteractive.docker
 script:
   - echo localhost > inventory
-  - ln -s ansible-docker-compose ../franklinkim.docker-compose
+  - ln -s ansible-docker-compose ../weareinteractive.docker-compose
   - ansible-playbook --syntax-check -i inventory tests/main.yml
   - ansible-playbook -i inventory tests/main.yml --connection=local --become -vvvv
