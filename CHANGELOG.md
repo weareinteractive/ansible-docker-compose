@@ -1,3 +1,13 @@
+<a name="1.3.0"></a>
+## 1.3.0 (2018-10-25)
+
+
+#### Features
+
+*   update galaxy organization name ([69adb6a2](https://github.com/weareinteractive/ansible-docker-compose/commit/69adb6a2beb59cb0dd24a0a5169b559e1a3e1fae))
+
+
+
 <a name="1.2.3"></a>
 ### 1.2.3 (2018-04-24)
 
