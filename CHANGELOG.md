@@ -1,3 +1,13 @@
+<a name="1.4.0"></a>
+## 1.4.0 (2018-11-11)
+
+
+#### Features
+
+*   remove easy_install ([aa4dd011](https://github.com/weareinteractive/ansible-docker-compose/commit/aa4dd011be6c12289e85219bbbec7d3b79785503))
+
+
+
 <a name="1.3.0"></a>
 ## 1.3.0 (2018-10-25)
 
