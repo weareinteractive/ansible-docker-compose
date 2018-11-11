@@ -61,9 +61,10 @@ This is an example playbook:
 ---
 
 - hosts: all
+  become: yes
   roles:
     - weareinteractive.docker
-    - weareinteractive.docker-compose
+    - weareinteractive.docker_compose
   vars:
     docker_compose_version: 1.21.0
     docker_compose_pip_version: pip #pip==9.0.3
