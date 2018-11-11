@@ -9,6 +9,6 @@ install:
   - ansible-galaxy install weareinteractive.docker
 script:
   - echo localhost > inventory
-  - ln -s ansible-docker-compose ../weareinteractive.docker-compose
+  - ln -s ansible-docker-compose ../weareinteractive.docker_compose
   - ansible-playbook --syntax-check -i inventory tests/main.yml
   - ansible-playbook -i inventory tests/main.yml --connection=local --become -vvvv
