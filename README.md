@@ -1,11 +1,11 @@
-# Ansible weareinteractive.docker-compose role
+# Ansible weareinteractive.docker_compose role
 
 [![Build Status](https://img.shields.io/travis/weareinteractive/ansible-docker-compose.svg)](https://travis-ci.org/weareinteractive/ansible-docker-compose)
-[![Galaxy](http://img.shields.io/badge/galaxy-weareinteractive.docker-compose-blue.svg)](https://galaxy.ansible.com/list#/roles/3275)
+[![Galaxy](http://img.shields.io/badge/galaxy-weareinteractive.docker_compose-blue.svg)](https://galaxy.ansible.com/weareinteractive/docker-compose)
 [![GitHub Tags](https://img.shields.io/github/tag/weareinteractive/ansible-docker-compose.svg)](https://github.com/weareinteractive/ansible-docker-compose)
 [![GitHub Stars](https://img.shields.io/github/stars/weareinteractive/ansible-docker-compose.svg)](https://github.com/weareinteractive/ansible-docker-compose)
 
-> `weareinteractive.docker-compose` is an [Ansible](http://www.ansible.com) role which:
+> `weareinteractive.docker_compose` is an [Ansible](http://www.ansible.com) role which:
 >
 > * installs docker-compose
 
@@ -14,29 +14,29 @@
 Using `ansible-galaxy`:
 
 ```shell
-$ ansible-galaxy install weareinteractive.docker-compose
+$ ansible-galaxy install weareinteractive.docker_compose
 ```
 
 Using `requirements.yml`:
 
 ```yaml
-- src: weareinteractive.docker-compose
+- src: weareinteractive.docker_compose
 ```
 
 Using `git`:
 
 ```shell
-$ git clone https://github.com/weareinteractive/ansible-docker-compose.git weareinteractive.docker-compose
+$ git clone https://github.com/weareinteractive/ansible-docker-compose.git weareinteractive.docker_compose
 ```
 
 ## Dependencies
 
 * Ansible >= 2.4
-* installed docker i.e. with [weareinteractive.docker-compose](https://github.com/weareinteractive/ansible-docker)
+* installed docker i.e. with [weareinteractive.docker_compose](https://github.com/weareinteractive/ansible-docker)
 
 **Note:**
 
-> Since Ansible Galaxy switched all role names to the organization name, this role has moved from `franklinkim.docker-compose` to `weareinteractive.docker-compose`!
+> Since Ansible Galaxy switched all role names to the organization name, this role has moved from `franklinkim.docker-compose` to `weareinteractive.docker_compose`!
 
 ## Variables
 
