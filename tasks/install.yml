@@ -2,11 +2,12 @@
 
 - name: Installing packages
   package:
-    name: python-pip
+    name: python3-pip
     state: present
 
 - name: Installing docker compose
   pip:
+    executable: pip3
     name: docker-compose
     version: "{{ docker_compose_version if docker_compose_version else omit }}"
     state: present
