@@ -47,8 +47,11 @@ Here is a list of all the default variables for this role, which are also availa
 
 # version
 docker_compose_version:
-# optionally set to specific version (pip==9.0.3)
-docker_compose_pip_version: pip
+# dependencies e.g. python3-pip
+docker_compose_packages:
+  - python-pip
+# pip executable e.g. pip3
+docker_compose_pip_executable: pip
 
 ```
 
