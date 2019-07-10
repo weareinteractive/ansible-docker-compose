@@ -2,11 +2,12 @@
 
 - name: Installing packages
   package:
-    name: python-pip
+    name: "{{ docker_compose_packages }}"
     state: present
 
 - name: Installing docker compose
   pip:
     name: docker-compose
-    version: "{{ docker_compose_version if docker_compose_version else omit }}"
+    version: "{{ docker_compose_version | default(omit) }}"
+    executable: "{{ docker_compose_pip_executable }}"
     state: present
