@@ -1,3 +1,18 @@
+<a name="1.5.0"></a>
+## 1.5.0 (2019-07-10)
+
+
+#### Bug Fixes
+
+*   change pip2 to pip3 ([f38ea977](https://github.com/weareinteractive/ansible-docker-compose/commit/f38ea9772460df9bbf43721da5423ff75df796c4))
+
+#### Features
+
+*   add variables to switch pip version Merge branch 'FabGre-FabGre/fix-docker-compose-install' ([eeb09230](https://github.com/weareinteractive/ansible-docker-compose/commit/eeb09230e84bfd82d25c35d656bb37eaf33155aa))
+*   add variables to switch pip ([0fd4a7fe](https://github.com/weareinteractive/ansible-docker-compose/commit/0fd4a7fe4bc5eeab6f983ca1333626c0be691364))
+
+
+
 <a name="1.4.1"></a>
 ### 1.4.1 (2019-07-10)
 
